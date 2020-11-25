@@ -1,0 +1,23 @@
+{
+  "name": "meo-blog-server",
+  "version": "1.0.0",
+  "description": "meo-blog-server",
+  "main": "index.js",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^9.0.0",
+    "http": "^0.0.1-security",
+    "url": "^0.11.0",
+    "dateformat": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meodinger/meo-blog.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Meodinger",
+  "license": "WTFPL"
+}

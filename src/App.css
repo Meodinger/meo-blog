@@ -1,0 +1,32 @@
+
+#container {
+    min-height: 110vh;
+    background-color: whitesmoke;
+}
+
+#space-holder {
+    height: 80px;
+}
+
+#footer {
+    min-height: 40px;
+    padding-top: 40px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#footer .separator {
+    width: 80%;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-top: 2px dashed;
+}
+
+#footer .text-container {
+    position: relative;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+}

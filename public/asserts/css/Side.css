@@ -1,0 +1,56 @@
+
+.Side-bar {
+    display: none;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-left: 0;
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
+
+.Side-head {
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 20px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.closeAside {
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-block-start: 10px;
+    -webkit-margin-before: 10px;
+    text-align: left;
+    float: right;
+    color: antiquewhite;
+}
+
+.closeAside a {
+    color: antiquewhite;
+}
+
+.Meo-info {
+    margin: 0 5% 0 5%;
+    text-align: center;
+}
+
+.Side-link {
+    height: 60px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.Side-link p {
+    text-align: left;
+    margin: 0 5% 0 5%;
+}
+
+.Side-link a {
+    float: right;
+}

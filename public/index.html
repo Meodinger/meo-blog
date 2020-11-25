@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+
+    <script src="%PUBLIC_URL%/asserts/js/listeners.js" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/asserts/js/action.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/asserts/css/Abstract.css" type="text/css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/asserts/css/Side.css" type="text/css"/>
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+
+    <title>一个人的代码</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<header class="Abstract-header" id="abstract" style="z-index: 1;">
+    <div class="Logo-mask">
+        <div class="Logo">
+        </div>
+    </div>
+    <p>
+        只要心在跳动，就有血的潮汐
+    </p>
+    <div>
+        <!--
+        <div class="Abstract-card" onclick="window.location.href='?category=Code'">Code</div>
+        <div class="Abstract-card" onclick="scrollToStart('main')">Start</div>
+        <div class="Abstract-card" onclick="window.location.href='?category=Essay'">Essay</div>
+        -->
+        <div class="Abstract-card" onclick="scrollToStart('space-holder')">Start</div>
+    </div>
+    <div class="Abstract-link">
+        <p>Github Account:&nbsp;<a class="Link" href="https://github.com/Meodinger" target="_blank" rel="noopener noreferrer">Meodinger</a></p>
+    </div>
+</header>
+<aside class="Side-bar" id="aside" style="z-index: 2;">
+    <div class="Side-head">
+        <h4 class="closeAside">A Human's Code&emsp;<span onClick="closeAside()">&lt;</span></h4>
+    </div>
+    <div class="Meo-info">
+        <img src='%PUBLIC_URL%/asserts/images/me.png' alt='Meodinger' style="width: 90%; margin: 0 10px 0 10px"/>
+        <p> ==== <span role="img">🐟</span> Fish-touching ==== </p>
+        <p>
+            主语言Java和JavaScript<br/>
+            代码不多，BUG不少<br/>
+            <strong>我的</strong>代码，<strong>我</strong>的代码<br/>
+        </p>
+        <p>
+            Use Java and JavaScript mostly<br/>
+            Less code, more bugs<br/>
+            My code, and code of me<br/>
+        </p>
+    </div>
+    <footer class="Side-link">
+        <p>GitHub: <a class="Link" href="https://github.com/Meodinger" target="_blank" rel="noopener noreferrer">Meodinger</a></p>
+        <p>Mailto: <a class=Link" href="mailto:meodinger@qq.com" target="_blank" rel="noopener noreferrer">meodinger#qq.com</a></p>
+        <p>友情链接: <a class="Link" href="https://tdgsgl.top/" target="_blank" rel="noopener noreferrer">TDGSGL</a></p>
+    </footer>
+</aside>
+<div id="root" style="z-index: 0;">
+</div>
+</body>
+</html>

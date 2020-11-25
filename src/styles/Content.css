@@ -1,0 +1,55 @@
+
+#main {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    border: black dashed 2px;
+    transition: margin-left 0.5s;
+}
+
+/* ========== */
+
+.Article-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*border: #333333 solid 1px;*/
+}
+
+.Article-card span {
+    display: block;
+    font-size: 20px;
+}
+
+.Article-card .title {
+    font-size: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Article-card .abstract {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #333333;
+    word-break: break-word;
+}
+
+.Article-card .abstract .em {
+    font-weight: bold;
+}
+
+.Article-card .info {
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.Article-card .dashed {
+    margin: 5px 20px 5px 20px;
+    border: none;
+    border-top: 2px dashed dimgrey;
+}
+
+/* ========== */
+
+
+

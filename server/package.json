@@ -11,10 +11,6 @@
     "url": "^0.11.0",
     "dateformat": "^3.0.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Meodinger/meo-blog.git"
-  },
   "scripts": {
     "start": "node index.js"
   },

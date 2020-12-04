@@ -54,7 +54,7 @@ server listens on port 3002<br/>
 |method|argument_1|argument_2|return|
 |---|---|---|---|
 |/getArticles?|category="Code" &verbar; "Diary" &verbar; "Essay"|password?: string|{"articles": Article[]}|
-|/getArticle?|category="Code" &verbar; "Diary" &verbar; "Essay" &verbar; "Other"|time: number|articleContent: string|
+|/getArticle?|category="Code" &verbar; "Diary" &verbar; "Essay" &verbar; "Other"|time: number|article: string|
 |other|any|any|{"err": {"name": string, "message": string}}|
 
 `access denied` and `argument invalid` also return in its method style 

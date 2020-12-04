@@ -10,7 +10,7 @@ export default class extends React.Component<any, {
     category: CATEGORY,
     mode: MODE,
     articles: Article[],
-    articleContent: string
+    article: string
 }> {
     constructor(props: any) {
         super(props);
@@ -18,9 +18,12 @@ export default class extends React.Component<any, {
             category: CATEGORY.All,
             mode: MODE.waiting,
             articles: [],
-            articleContent: '',
+            article: '',
         };
         if (!this.isSearchValid()) this.getAllArticles();
+
+        // @ts-ignore
+        document.getElementById('loadAndStart').innerHTML = 'Start';
     }
 
     /**
@@ -34,7 +37,7 @@ export default class extends React.Component<any, {
             if (category === CATEGORY.All) return false;
             getArticle(category, time).then(res => this.setState({
                 mode: MODE.reading,
-                articleContent: res
+                article: res
             }));
             return true;
         } else if (category && !time) {
@@ -44,7 +47,7 @@ export default class extends React.Component<any, {
         } else if (!category && time) {
             getArticle(CATEGORY.Other, time).then(res => this.setState({
                 mode: MODE.reading,
-                articleContent: res
+                article: res
             }));
             return true;
         }
@@ -83,7 +86,7 @@ export default class extends React.Component<any, {
      */
     changeArticle = (cate: CATEGORY, time: number) => {
         this.setState({category: CATEGORY.All, mode: MODE.waiting});
-        getArticle(cate, time).then(res => this.setState({articleContent: res, mode: MODE.reading}));
+        getArticle(cate, time).then(res => this.setState({article: res, mode: MODE.reading}));
     }
 
     render(): React.ReactNode {
@@ -93,9 +96,9 @@ export default class extends React.Component<any, {
                 <div id="space-holder"/>
                 <Content category={this.state.category}
                          mode={this.state.mode}
-                         getArticle={this.changeArticle}
+                         changeArticle={this.changeArticle}
                          articles={this.state.articles}
-                         article={this.state.articleContent}
+                         article={this.state.article}
                 />
             </div>
             <footer id="footer">

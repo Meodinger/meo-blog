@@ -8,7 +8,3 @@ window.addEventListener('scroll', () => {
         document.getElementById('abstract').setAttribute('style', 'display: none;');
     }
 });
-
-window.addEventListener('click', () => {
-
-});

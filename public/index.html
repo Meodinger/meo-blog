@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
@@ -11,6 +11,21 @@
 
     <script src="%PUBLIC_URL%/asserts/js/listeners.js" type="text/javascript"></script>
     <script src="%PUBLIC_URL%/asserts/js/action.js" type="text/javascript"></script>
+
+    <script>
+        window.onload = function () {
+            const userAgentInfo = navigator.userAgent;
+            const Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+            let agentInfo = null;
+            for (let i = 0; i < Agents.length; i++) {
+                if (userAgentInfo.indexOf(Agents[i]) > 0) { agentInfo = userAgentInfo; break; }
+            }
+            if(agentInfo){
+                alert('请使用PC端访问以获得最佳体验！');
+                history.back();
+            }
+        }
+    </script>
 
     <link rel="stylesheet" href="%PUBLIC_URL%/asserts/css/Abstract.css" type="text/css"/>
     <link rel="stylesheet" href="%PUBLIC_URL%/asserts/css/Side.css" type="text/css"/>
@@ -35,7 +50,7 @@
         <div class="Abstract-card" onclick="scrollToStart('main')">Start</div>
         <div class="Abstract-card" onclick="window.location.href='?category=Essay'">Essay</div>
         -->
-        <div class="Abstract-card" onclick="scrollToStart('space-holder')">Start</div>
+        <div class="Abstract-card" onclick="scrollToStart('space-holder')" id="loadAndStart">Loading...</div>
     </div>
     <div class="Abstract-link">
         <p>Github Account:&nbsp;<a class="Link" href="https://github.com/Meodinger" target="_blank" rel="noopener noreferrer">Meodinger</a></p>
@@ -46,7 +61,7 @@
         <h4 class="closeAside">A Human's Code&emsp;<span onClick="closeAside()">&lt;</span></h4>
     </div>
     <div class="Meo-info">
-        <img src='%PUBLIC_URL%/asserts/images/me.png' alt='Meodinger' style="width: 90%; margin: 0 10px 0 10px"/>
+        <img src="%PUBLIC_URL%/asserts/images/me.png" alt="Meodinger" style="width: 90%; margin: 0 10px 0 10px"/>
         <p> ==== <span role="img">🐟</span> Fish-touching ==== </p>
         <p>
             主语言Java和JavaScript<br/>
@@ -61,7 +76,7 @@
     </div>
     <footer class="Side-link">
         <p>GitHub: <a class="Link" href="https://github.com/Meodinger" target="_blank" rel="noopener noreferrer">Meodinger</a></p>
-        <p>Mailto: <a class=Link" href="mailto:meodinger@qq.com" target="_blank" rel="noopener noreferrer">meodinger#qq.com</a></p>
+        <p>Mailto: <a class="Link" href="mailto:meodinger@qq.com" target="_blank" rel="noopener noreferrer">meodinger#qq.com</a></p>
         <p>友情链接: <a class="Link" href="https://tdgsgl.top/" target="_blank" rel="noopener noreferrer">TDGSGL</a></p>
     </footer>
 </aside>

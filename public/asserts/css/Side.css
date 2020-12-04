@@ -54,3 +54,12 @@
 .Side-link a {
     float: right;
 }
+
+.Side-link .Link {
+    text-decoration: none;
+    color: #0099EE;
+}
+
+.Side-link .Link:hover {
+    text-decoration: none;
+}

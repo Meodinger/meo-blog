@@ -1,5 +1,5 @@
-const {verifyTimeStamp, md5_2} = require('./Util/Utils');
-const {articleErr, articlesErr, articlesDenied} = require('./Util/Article');
+const {verifyTimeStamp, md5_2} = require('./Utils/Utils');
+const {articleErr, articlesErr, articlesDenied} = require('./Utils/Article');
 const {ConfigManager, ArticleManager} = require('./Manager');
 const {CATEGORY} = require('./Constants');
 

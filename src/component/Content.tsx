@@ -36,13 +36,13 @@ export default class Content extends React.Component<{
     mode: MODE;
     articles: Article[];
     article: string;
-    getArticle: (cate: CATEGORY, time: number) => void;
+    changeArticle: (cate: CATEGORY, time: number) => void;
 }> {
 
     /**
      * @See ../App.tsx::changeArticle
      */
-    showArticle = (cate: CATEGORY, time: number) => this.setState({article: this.props.getArticle(cate, time)});
+    showArticle = (cate: CATEGORY, time: number) => this.setState({article: this.props.changeArticle(cate, time)});
 
     render(): React.ReactNode {
         if (this.props.mode === MODE.exploring)
